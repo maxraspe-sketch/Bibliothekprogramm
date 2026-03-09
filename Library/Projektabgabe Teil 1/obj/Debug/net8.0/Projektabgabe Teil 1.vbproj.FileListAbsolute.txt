@@ -1,0 +1,15 @@
+U:\Projects\Library\Projektabgabe Teil 1\bin\Debug\net8.0\Projektabgabe Teil 1.exe
+U:\Projects\Library\Projektabgabe Teil 1\bin\Debug\net8.0\Projektabgabe Teil 1.deps.json
+U:\Projects\Library\Projektabgabe Teil 1\bin\Debug\net8.0\Projektabgabe Teil 1.runtimeconfig.json
+U:\Projects\Library\Projektabgabe Teil 1\bin\Debug\net8.0\Projektabgabe Teil 1.dll
+U:\Projects\Library\Projektabgabe Teil 1\bin\Debug\net8.0\Projektabgabe Teil 1.pdb
+U:\Projects\Library\Projektabgabe Teil 1\obj\Debug\net8.0\Projektabgabe Teil 1.GeneratedMSBuildEditorConfig.editorconfig
+U:\Projects\Library\Projektabgabe Teil 1\obj\Debug\net8.0\Projektabgabe Teil 1.AssemblyInfoInputs.cache
+U:\Projects\Library\Projektabgabe Teil 1\obj\Debug\net8.0\Projektabgabe Teil 1.AssemblyInfo.vb
+U:\Projects\Library\Projektabgabe Teil 1\obj\Debug\net8.0\Projektabgabe Teil 1.vbproj.CoreCompileInputs.cache
+U:\Projects\Library\Projektabgabe Teil 1\obj\Debug\net8.0\Projektabgabe Teil 1.sourcelink.json
+U:\Projects\Library\Projektabgabe Teil 1\obj\Debug\net8.0\Projektabgabe Teil 1.dll
+U:\Projects\Library\Projektabgabe Teil 1\obj\Debug\net8.0\refint\Projektabgabe Teil 1.dll
+U:\Projects\Library\Projektabgabe Teil 1\obj\Debug\net8.0\Projektabgabe Teil 1.pdb
+U:\Projects\Library\Projektabgabe Teil 1\obj\Debug\net8.0\Projektabgabe Teil 1.genruntimeconfig.cache
+U:\Projects\Library\Projektabgabe Teil 1\obj\Debug\net8.0\ref\Projektabgabe Teil 1.dll

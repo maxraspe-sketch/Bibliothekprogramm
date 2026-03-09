@@ -35,3 +35,15 @@ Public Class Benutzer
     End Sub
 End Class
 
+' ==============================
+' HAUPTPROGRAMM
+' ==============================
+Module Program
+
+    Dim buecherListe As New List(Of Buch)
+    Dim benutzerListe As New List(Of Benutzer)
+
+    Sub Main()
+        LadeTestdaten()
+        Menu()
+    End Sub
