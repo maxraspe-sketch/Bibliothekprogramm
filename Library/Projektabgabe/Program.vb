@@ -336,3 +336,13 @@ Module Program
         Return -1
 
     End Function
+
+    Sub Pause()
+
+        Console.WriteLine()
+        Console.WriteLine("Press any key...")
+        Console.ReadKey()
+
+    End Sub
+
+End Module
