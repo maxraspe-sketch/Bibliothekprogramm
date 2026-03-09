@@ -289,3 +289,26 @@ Module Program
         Console.WriteLine("Book borrowed successfully.")
 
     End Sub
+    Sub GiveBack()
+
+        Console.Write("ISBN: ")
+        Dim isbn As String = Console.ReadLine().Trim()
+
+        Dim bookIndex As Integer = FindBookIndex(isbn)
+
+        If bookIndex = -1 Then
+            Console.WriteLine("Book not found.")
+            Return
+        End If
+
+        If Books(bookIndex).Status <> "lend" Then
+            Console.WriteLine("This book is not borrowed.")
+            Return
+        End If
+
+        Books(bookIndex).Status = "available"
+        Books(bookIndex).BorrowerId = ""
+
+        Console.WriteLine("Book returned successfully.")
+
+    End Sub
