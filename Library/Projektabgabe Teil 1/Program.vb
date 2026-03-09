@@ -122,3 +122,37 @@ Module Program
         Loop While auswahl <> 0
 
     End Sub
+
+
+    ' ==============================
+    ' BUCH HINZUFÜGEN
+    ' ==============================
+    Sub BuchHinzufuegen()
+
+        Console.Write("ID: ")
+        Dim id As Integer = Convert.ToInt32(Console.ReadLine())
+
+        Console.Write("Titel: ")
+        Dim titel As String = Console.ReadLine()
+
+        Console.Write("Autor: ")
+        Dim autor As String = Console.ReadLine()
+
+        buecherListe.Add(New Buch(id, titel, autor))
+
+    End Sub
+
+    ' ==============================
+    ' BENUTZER HINZUFÜGEN
+    ' ==============================
+    Sub BenutzerHinzufuegen()
+
+        Console.Write("ID: ")
+        Dim id As Integer = Convert.ToInt32(Console.ReadLine())
+
+        Console.Write("Name: ")
+        Dim name As String = Console.ReadLine()
+
+        benutzerListe.Add(New Benutzer(id, name))
+
+    End Sub
