@@ -255,3 +255,37 @@ Module Program
         Console.WriteLine("Book borrowed successfully.")
 
     End Sub
+
+    Sub BorrowBook()
+
+        Console.Write("ISBN: ")
+        Dim isbn As String = Console.ReadLine().Trim()
+
+        Console.Write("User ID: ")
+        Dim userId As String = Console.ReadLine().Trim()
+
+        Dim userIndex As Integer = FindUserIndex(userId)
+
+        If userIndex = -1 Then
+            Console.WriteLine("User not found.")
+            Return
+        End If
+
+        Dim bookIndex As Integer = FindBookIndex(isbn)
+
+        If bookIndex = -1 Then
+            Console.WriteLine("Book not found.")
+            Return
+        End If
+
+        If Books(bookIndex).Status <> "available" Then
+            Console.WriteLine("Book not available.")
+            Return
+        End If
+
+        Books(bookIndex).Status = "lend"
+        Books(bookIndex).BorrowerId = userId
+
+        Console.WriteLine("Book borrowed successfully.")
+
+    End Sub
