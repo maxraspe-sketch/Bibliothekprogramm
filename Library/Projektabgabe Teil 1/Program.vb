@@ -193,3 +193,72 @@ Module Program
         Next
 
     End Sub
+    ' ==============================
+    ' BUCH AUSLEIHEN
+    ' ==============================
+    Sub BuchAusleihen()
+
+        Console.Write("Buch-ID: ")
+        Dim buchId As Integer = Convert.ToInt32(Console.ReadLine())
+
+        Console.Write("Benutzer-ID: ")
+        Dim userId As Integer = Convert.ToInt32(Console.ReadLine())
+
+        For i As Integer = 0 To buecherListe.Count - 1
+
+            If buecherListe(i).Id = buchId Then
+
+                If buecherListe(i).Verfuegbar Then
+
+                    buecherListe(i).Verfuegbar = False
+                    buecherListe(i).AusgeliehenVon = userId
+
+                    Console.WriteLine("Buch erfolgreich ausgeliehen.")
+
+                Else
+                    Console.WriteLine("Buch ist bereits ausgeliehen.")
+                End If
+
+                Return
+            End If
+
+        Next
+
+        Console.WriteLine("Buch nicht gefunden.")
+
+    End Sub
+
+
+    Sub BuchZurueckgeben()
+
+        Console.Write("Buch-ID: ")
+        Dim buchId As Integer = Convert.ToInt32(Console.ReadLine())
+
+        Console.Write("Benutzer-ID: ")
+        Dim userId As Integer = Convert.ToInt32(Console.ReadLine())
+
+        For i As Integer = 0 To buecherListe.Count - 1
+
+            If buecherListe(i).Id = buchId Then
+
+                If buecherListe(i).AusgeliehenVon = userId Then
+
+                    buecherListe(i).Verfuegbar = True
+                    buecherListe(i).AusgeliehenVon = 0
+
+                    Console.WriteLine("Buch erfolgreich zurückgegeben.")
+
+                Else
+                    Console.WriteLine("Dieses Buch wurde nicht von diesem Benutzer ausgeliehen.")
+                End If
+
+                Return
+            End If
+
+        Next
+
+        Console.WriteLine("Buch nicht gefunden.")
+
+    End Sub
+
+End Module
