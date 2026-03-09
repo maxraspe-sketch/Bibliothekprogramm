@@ -312,3 +312,27 @@ Module Program
         Console.WriteLine("Book returned successfully.")
 
     End Sub
+    Function FindUserIndex(ByVal userId As String) As Integer
+
+        For i As Integer = 0 To Users.Length - 1
+            If Users(i).Id = userId Then
+                Return i
+            End If
+        Next
+
+        Return -1
+
+    End Function
+
+
+    Function FindBookIndex(ByVal isbn As String) As Integer
+
+        For i As Integer = 0 To Books.Length - 1
+            If Books(i).Isbn = isbn Then
+                Return i
+            End If
+        Next
+
+        Return -1
+
+    End Function
