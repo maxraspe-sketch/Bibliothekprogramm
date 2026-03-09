@@ -163,3 +163,25 @@ Module Program
         Return result
 
     End Function
+    Sub ShowUsers()
+
+        For i As Integer = 0 To Users.Length - 1
+            Console.WriteLine(Users(i).Id & "," & Users(i).Name)
+        Next
+
+    End Sub
+
+
+    Sub ShowBooks()
+
+        For i As Integer = 0 To Books.Length - 1
+
+            If Books(i).Status = "available" Then
+                Console.WriteLine(Books(i).Isbn & "," & Books(i).Title & "," & Books(i).Author & ",available")
+            Else
+                Console.WriteLine(Books(i).Isbn & "," & Books(i).Title & "," & Books(i).Author & ",lend to " & Books(i).BorrowerId)
+            End If
+
+        Next
+
+    End Sub
